@@ -6,7 +6,11 @@ import {
   HeaderName,
   HeaderImageDiv,
 } from './components/styles/HeaderDiv';
-import { FooterDiv } from './components/styles/FooterDiv';
+import {
+  FooterDiv,
+  Copyright,
+  FooterText,
+} from './components/styles/FooterDiv';
 import { LeftDiv } from './components/styles/LeftDiv';
 import { RightDiv } from './components/styles/RightDiv';
 import { FormDiv } from './components/styles/FormContent';
@@ -1002,7 +1006,39 @@ function App() {
           </RightDiv>
         </ContentDiv>
         <FooterDiv>
-          <p>This is a footer</p>
+          <Copyright>
+            <FooterText PaddingRight="0.25rem" PaddingLeft="0" MarginLeft="0">
+              Copyright
+            </FooterText>
+            <img
+              width="20"
+              height="20"
+              src="https://img.icons8.com/material-outlined/20/FFFFFF/copyright.png"
+              alt="copyright"
+            />
+            <FooterText
+              PaddingLeft="0.25rem"
+              MarginRight="0.25rem"
+              PaddingRight="0"
+            >
+              {' '}
+              2024 Manikanth
+            </FooterText>
+          </Copyright>
+          <div class="github-icon">
+            <a
+              href="https://github.com/manikanth1811/resume-builder"
+              target="_blank"
+              class="github-link"
+            >
+              <img
+                width="24"
+                height="24"
+                src="https://img.icons8.com/material-outlined/24/FFFFFF/github.png"
+                alt="github"
+              />
+            </a>
+          </div>
         </FooterDiv>
       </Completediv>
     </>
